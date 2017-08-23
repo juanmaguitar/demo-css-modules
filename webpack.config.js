@@ -15,7 +15,12 @@ module.exports = {
         test: /\.js/,
         loader: 'babel-loader',
         include: entryApp
-       }
+      },
+      {
+        test: /\.css/,
+        loaders: ['style-loader', 'css-loader'],
+        include: entryApp
+      }
     ]
   }
 }
